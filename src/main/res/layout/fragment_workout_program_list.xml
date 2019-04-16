@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".fragments.WorkoutProgramListFragment">
+
+
+    <TextView
+        android:id="@+id/workoutType_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="42sp"
+        android:padding="12dp"
+        android:textColor="@color/dark"
+        android:textAllCaps="true"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:text="Workout Type" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/discovery_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

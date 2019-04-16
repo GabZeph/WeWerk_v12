@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/introSlideIcon_imageView"
+        android:layout_width="265dp"
+        android:layout_height="265dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@drawable/ic_weight_intro" />
+
+    <TextView
+        android:id="@+id/introSlideTitle_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TITLE"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:layout_margin="36dp"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        />
+
+    <TextView
+        android:id="@+id/introSlideDescription_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:padding="36dp"
+        android:textColor="@color/white_transparent"
+        android:text="Explication d'une des fonctions de l'application. fisdofdshfdhgfdshggfdsgdgs" />
+
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.DiscoverFragment">
+
+    <!--TODO:discover page est super lente à charger-->
+
+    <SearchView
+        android:id="@+id/discoverSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/searchView_height"
+        android:layout_margin="@dimen/discover_layout_margin" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/discover_gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/discover_layout_margin"
+        app:columnCount="2"
+        app:rowCount="3">
+
+        <LinearLayout
+            android:id="@+id/plyometryLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/discover_layout_margin"
+            android:background="@drawable/ic_plyometryedit"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/plyometry_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_plyometry"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/plyometry_imageView"
+                android:layout_width="@dimen/discover_icon_dimension"
+                android:layout_height="@dimen/discover_icon_dimension"
+                android:contentDescription="@string/text_plyometry"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_hoppingsilhouette" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hypertrophyLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/discover_layout_margin"
+            android:background="@drawable/ic_hypertrophyedit"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/hypertrophy_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_hypertrophy"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/hypertrophy_imageView"
+                android:layout_width="@dimen/discover_icon_dimension"
+                android:layout_height="@dimen/discover_icon_dimension"
+                android:contentDescription="@string/text_programs"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_carrot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fatLossLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/discover_layout_margin"
+            android:background="@drawable/ic_fatlossedit"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/fatLoss_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/text_fatloss"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/fatLoss_imageView"
+                android:layout_width="@dimen/discover_icon_dimension"
+                android:layout_height="@dimen/discover_icon_dimension"
+                android:contentDescription="@string/text_programs"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_apple" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/strengthLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/discover_layout_margin"
+            android:background="@drawable/ic_strengthedit"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/strength_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_strength"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/strength_imageView"
+                android:layout_width="@dimen/discover_icon_dimension"
+                android:layout_height="@dimen/discover_icon_dimension"
+                android:contentDescription="@string/text_programs"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_weightlifter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardioLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/discover_layout_margin"
+            android:background="@drawable/ic_cardioedit"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/cardio_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_cardio"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/cardio_imageView"
+                android:layout_width="@dimen/discover_icon_dimension"
+                android:layout_height="@dimen/discover_icon_dimension"
+                android:contentDescription="@string/text_programs"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_cardiogram" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stretchingLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/discover_layout_margin"
+            android:background="@drawable/ic_stretchingedit"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/stretching_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_stretching"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/stretching_imageView"
+                android:layout_width="@dimen/discover_icon_dimension"
+                android:layout_height="@dimen/discover_icon_dimension"
+                android:contentDescription="@string/text_stretching"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_stretchingexercises" />
+        </LinearLayout>
+
+    </android.support.v7.widget.GridLayout>
+
+
+
+</LinearLayout>

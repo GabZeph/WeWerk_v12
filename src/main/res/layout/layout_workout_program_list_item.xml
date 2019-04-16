@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@color/dark_transparent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/creatorProfilePicture_ImageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+
+            app:srcCompat="@drawable/ic_profile" />
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/creatorUsename_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/text_username"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/workoutProgramInfo_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/programName_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Program Name"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/workoutCreator_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="by username"
+                android:textColor="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/muscleSolicitated_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="muscle solicitated"
+                android:textColor="@color/white_transparent"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/difficulty_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difficulty"
+                android:textAllCaps="true"
+                android:textColor="@color/white_transparent"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/bookmarkedProgram_imageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_star" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/lovedProgram_imageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_heart" />
+    </LinearLayout>
+
+
+</LinearLayout>

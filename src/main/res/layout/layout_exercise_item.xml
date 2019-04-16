@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="right">
+
+    <TextView
+        android:id="@+id/movementName_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Movement Name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/setNumber_textView"
+        android:layout_width="60dp"
+        android:textColor="@color/white"
+
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="4"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/repNumber_textView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+
+        android:textAlignment="center"
+        android:text="8"
+        android:textSize="16sp" />
+
+
+
+
+
+
+</LinearLayout>

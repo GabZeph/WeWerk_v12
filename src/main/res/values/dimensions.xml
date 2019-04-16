@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="discover_layout_margin">8dp</dimen>
+    <dimen name="discover_icon_dimension">32dp</dimen>
+
+
+</resources>
