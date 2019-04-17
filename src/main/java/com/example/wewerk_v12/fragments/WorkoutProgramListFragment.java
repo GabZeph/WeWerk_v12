@@ -13,6 +13,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.wewerk_v12.R;
@@ -33,6 +35,8 @@ public class WorkoutProgramListFragment extends Fragment implements WorkoutProgr
     //vars
     private ArrayList<WorkoutProgram> mWorkoutProgramArrayList = new ArrayList<>();
     private WorkoutProgramRecyclerAdapter mWorkoutProgramRecyclerAdapter;
+    private ImageView mWorkout_program_back_imageView, mWorkout_program_search_imageView;
+
 
     private static final String TAG = "WorkoutProgramListFragm";
 
@@ -44,8 +48,15 @@ public class WorkoutProgramListFragment extends Fragment implements WorkoutProgr
         //initializing views
         mWorkoutType_textView = (TextView) view.findViewById(R.id.workoutType_textView);
         mDiscovery_recyclerView = (RecyclerView) view.findViewById(R.id.discovery_recyclerView);
+//        mWorkout_program_back_imageView = (ImageView) view.findViewById(R.id.workout_program_back_imageView);
+//        mWorkout_program_search_imageView = (ImageView) view.findViewById(R.id.workout_program_search_imageView);
+
+        //TODO: add toolbar button listener
+        addToolbarButtonListener();
+
 
         //change the text inside the views
+
 
         //set the array to the listadapter and associating adapter to the recycler view to adapt the note
         initRecyclerView();
@@ -54,6 +65,11 @@ public class WorkoutProgramListFragment extends Fragment implements WorkoutProgr
         retrievingWorkoutProgramData();
         return view;
     }
+
+    private void addToolbarButtonListener() {
+    }
+
+
 
     private void retrievingWorkoutProgramData() {
         //TODO: getting workout program informations from firebase

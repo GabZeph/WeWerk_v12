@@ -42,20 +42,20 @@ public class ExerciseRecyclerAdapter extends RecyclerView.Adapter<ExerciseRecycl
         return mExercisesArrayList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder  {
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
-TextView movementName_textView, setNumber_textView, repNumber_textView;
-    public ViewHolder(@NonNull View itemView) {
-        super(itemView);
+        TextView movementName_textView, setNumber_textView, repNumber_textView;
 
-        //initializing views
-        movementName_textView=itemView.findViewById(R.id.movementName_textView);
-        setNumber_textView=itemView.findViewById(R.id.setNumber_textView);
-        repNumber_textView=itemView.findViewById(R.id.repNumber_textView);
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
 
+            //initializing views
+            movementName_textView = itemView.findViewById(R.id.movementName_textView);
+            setNumber_textView = itemView.findViewById(R.id.setNumber_textView);
+            repNumber_textView = itemView.findViewById(R.id.repNumber_textView);
+
+        }
     }
-}
-
 
 
 }

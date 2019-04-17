@@ -14,10 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Day 1"
+        android:text="day 1"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="32sp"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
 
@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/white_border"
         android:gravity="right"
+        android:padding="5dp"
         android:orientation="horizontal">
 
         <TextView

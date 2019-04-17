@@ -12,6 +12,7 @@
     <SearchView
         android:id="@+id/discoverSearchView"
         android:layout_width="match_parent"
+        android:tooltipText="@string/text_searchonwewerk"
         android:layout_height="@dimen/searchView_height"
         android:layout_margin="@dimen/discover_layout_margin" />
 

@@ -5,29 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="25dp"
     tools:context=".fragments.WorkoutProgramListFragment">
 
 
-    <TextView
-        android:id="@+id/workoutType_textView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="42sp"
-        android:padding="12dp"
-        android:textColor="@color/dark"
-        android:textAllCaps="true"
-        android:background="@color/white"
-        android:textAlignment="center"
-        android:text="Workout Type" />
+        android:layout_height="@dimen/searchView_height"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="@dimen/toolbar_padding"
+        android:paddingLeft="@dimen/toolbar_padding"
+        android:weightSum="100">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        <ImageView
+            android:id="@+id/workout_program_back_imageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:src="@drawable/back"
+            android:tint="@color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/workout_type_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/dark"
+            android:padding="12dp"
+            android:layout_weight="80"
+            android:text="Workout Type"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_title_textsize" />
+
+        <ImageView
+            android:id="@+id/workout_program_search_imageView"
+            android:layout_width="0dp"
+            android:tint="@color/white"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_magnifying_glass"
+            android:layout_weight="10"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <!--<Space-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="15dp" />-->
 
     <android.support.v7.widget.RecyclerView
 
+        android:overScrollMode="never"
         android:id="@+id/discovery_recyclerView"
         android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_height="match_parent" />
 </LinearLayout>
