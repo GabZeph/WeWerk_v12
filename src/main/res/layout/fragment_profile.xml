@@ -196,7 +196,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/profile_button"
-            android:text="@string/text_calculate_imc" />
+            android:text="@string/text_calculate_your_bmi" />
 
         <Button
             android:id="@+id/profile_findOneRepMax_button"

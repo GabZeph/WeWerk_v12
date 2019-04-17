@@ -104,6 +104,7 @@ public class ProfileFragment extends Fragment {
         }
     };
 
+    //TODO: clean up les button listener
 
     private View.OnClickListener onCalculateBmrClickedListener = new View.OnClickListener() {
         @Override
@@ -136,8 +137,11 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: find one rep max listener
-//            Intent intent = new Intent(v.getContext(), FindOneRepMaxActivity.class);
-//            startActivity(intent);
+            mFragment = new FindOneRepMaxFragment();
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, mFragment);
+            fragmentTransaction.commit();
         }
     };
 
@@ -146,8 +150,11 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: training ressource listener
-//            Intent intent = new Intent(v.getContext(), TrainingRessourcesActivity.class);
-//            startActivity(intent);
+            mFragment = new TrainingRessourceFragment();
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, mFragment);
+            fragmentTransaction.commit();
 
         }
     };
