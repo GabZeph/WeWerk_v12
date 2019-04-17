@@ -1,6 +1,5 @@
 package com.example.wewerk_v12.fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -16,7 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.wewerk_v12.R;
-import com.example.wewerk_v12.activities.FollowActivity;
 import com.example.wewerk_v12.models.User;
 
 import java.util.ArrayList;
@@ -84,7 +82,7 @@ public class ProfileFragment extends Fragment {
         mSettings_imageView.setOnClickListener(onSettingClickedListener);
         mTimer_button.setOnClickListener(onTimerClickedListener);
         mCalculateBMR_button.setOnClickListener(onCalculateBmrClickedListener);
-        mCalculateIMC_button.setOnClickListener(onCalculateImcClickedListener);
+        mCalculateIMC_button.setOnClickListener(onCalculateBMIClickedListener);
         mFindOneRepMax_button.setOnClickListener(onFindOneRepMaxClickedListener);
         mTrainingRessources_button.setOnClickListener(onTrainingRessourcesClickedListener);
         mSendFeedback_button.setOnClickListener(onSendFeedbackClickedListener);
@@ -112,6 +110,7 @@ public class ProfileFragment extends Fragment {
         public void onClick(View v) {
 //TODO: calculate bmr listener
             mFragment = new CalculateBMRFragment();
+
             FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, mFragment);
@@ -120,10 +119,15 @@ public class ProfileFragment extends Fragment {
     };
 
 
-    private View.OnClickListener onCalculateImcClickedListener = new View.OnClickListener() {
+    private View.OnClickListener onCalculateBMIClickedListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
 //TODO: calculate imc listener
+            mFragment = new CalculateBMIFragment();
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, mFragment);
+            fragmentTransaction.commit();
         }
     };
 

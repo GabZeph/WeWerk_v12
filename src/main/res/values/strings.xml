@@ -53,5 +53,9 @@
     <string name="text_calculate_your_bmr">Calculate your BMR</string>
     <string name="text_what_is_bmr">what is bmr</string>
     <string name="text_interpreting_your_bmr">Interpreting your BMR</string>
+    <string name="text_calculate_your_bmi">Calculate your BMI</string>
+    <string name="text_what_is_bmi">What is BMI</string>
+    <string name="text_interpreting_yout_bmi">Interpreting yout BMI</string>
+    <string name="text_calculating_your_bmi">Calculating your BMI</string>
 
 </resources>
