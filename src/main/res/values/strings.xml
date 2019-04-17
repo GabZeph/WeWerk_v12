@@ -48,4 +48,10 @@
     <string name="text_calculate_imc">Calculate IMC</string>
     <string name="text_findonerepmax">Find one rep max</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_calculate_your_bmr">Calculate your BMR</string>
+    <string name="text_what_is_bmr">what is bmr</string>
+    <string name="text_interpreting_your_bmr">Interpreting your BMR</string>
+
 </resources>

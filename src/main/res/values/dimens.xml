@@ -15,4 +15,9 @@
     <dimen name="workout_program_list_item_buttonsize">20dp</dimen>
     <dimen name="workout_program_list_profile_icon_size">25dp</dimen>
     <dimen name="single_workout_program_item_margin">25dp</dimen>
+    <dimen name="white_line_height">5dp</dimen>
+    <dimen name="space_height_between_title_subtitle">20dp</dimen>
+    <dimen name="space_height_between_subtitles">10dp</dimen>
+
+    <dimen name="padding_between_subtitle_description">8dp</dimen>
 </resources>

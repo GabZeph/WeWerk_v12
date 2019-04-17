@@ -82,13 +82,13 @@ public class DiscoverFragment extends Fragment {
             }
 
             //replace discover fragment with discovery activity to see programs
-            replaceDiscoverFragmentWithDiscoveryFragment();
+            viewWorkoutProgramsResume();
         }
     };
 
 //TODO: when we press back button, we go back to discover page, not exiting the app
 
-    private void replaceDiscoverFragmentWithDiscoveryFragment() {
+    private void viewWorkoutProgramsResume() {
         WorkoutProgramListFragment workoutProgramListFragment = new WorkoutProgramListFragment();
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

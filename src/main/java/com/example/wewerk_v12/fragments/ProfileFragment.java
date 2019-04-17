@@ -30,6 +30,8 @@ public class ProfileFragment extends Fragment {
 
     private ImageView mSettings_imageView;
 
+    private Fragment mFragment;
+
 //    private Button mFollow_button, mMessage_button;
 
     //private FrameLayout mProfileContrainer_frameLayout;
@@ -109,10 +111,10 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: calculate bmr listener
-            Fragment fragment = new CalculateBMRFragment();
+            mFragment = new CalculateBMRFragment();
             FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.replace(R.id.fragment_container, mFragment);
             fragmentTransaction.commit();
         }
     };
@@ -122,8 +124,6 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: calculate imc listener
-//            Intent intent = new Intent(v.getContext(), CalculateIMCActivity.class);
-//            startActivity(intent);
         }
     };
 
@@ -155,7 +155,8 @@ public class ProfileFragment extends Fragment {
 //TODO: sendfeeback listener
 
 //            Intent intent = new Intent(v.getContext(), SendFeedbackActivity.class);
-//            startActivity(intent);
+//
+
         }
     };
 
@@ -210,9 +211,18 @@ public class ProfileFragment extends Fragment {
     }
 
     private void goToFollowPage() {
-        Intent intent = new Intent(getContext(), FollowActivity.class);
-        intent.putExtra("follow_arrayList", mUserArrayList);
-        startActivity(intent);
+
+//
+//        Intent intent = new Intent(getContext(), FollowActivity.class);
+//        intent.putExtra("follow_arrayList", mUserArrayList);
+//        startActivity(intent);
+
+        mFragment = new FollowFragment();
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, mFragment);
+        fragmentTransaction.commit();
+
     }
 
 
