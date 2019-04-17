@@ -40,7 +40,7 @@ public class WorkoutProgramRecyclerAdapter extends RecyclerView.Adapter<WorkoutP
 
         //TODO: change image, difficulty, muscles solicitated views
         viewHolder.programName_textView.setText(mWorkoutProgramArrayList.get(i).getWorkoutProgramName());
-        viewHolder.workoutCreator_textView.setText(mWorkoutProgramArrayList.get(i).getWorkoutProgramName());
+        viewHolder.creatorUsername_textView.setText(mWorkoutProgramArrayList.get(i).getCreatorName());
 //        viewHolder.difficulty_textView.setText(mWorkoutProgramArrayList.get(i).getWorkoutProgramName());
 //        viewHolder.muscleSolicitated_textView.setText(mWorkoutProgramArrayList.get(i).get());
 
@@ -70,7 +70,7 @@ public class WorkoutProgramRecyclerAdapter extends RecyclerView.Adapter<WorkoutP
             //initializing views from workout list_item
 //            programImage_imageView = (CircleImageView) itemView.findViewById(R.id.programImage_imageView);
             programName_textView = (TextView) itemView.findViewById(R.id.programName_textView);
-            workoutCreator_textView = (TextView) itemView.findViewById(R.id.workoutCreator_textView);
+//            workoutCreator_textView = (TextView) itemView.findViewById(R.id.workoutCreator_textView);
             muscleSolicitated_textView = (TextView) itemView.findViewById(R.id.muscleSolicitated_textView);
             creatorUsername_textView = (TextView) itemView.findViewById(R.id.creatorUsename_textView);
 

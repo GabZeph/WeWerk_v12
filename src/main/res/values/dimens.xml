@@ -12,4 +12,7 @@
     <dimen name="toolbar_title_textsize">28sp</dimen>
     <dimen name="back_button_height">25dp</dimen>
     <dimen name="toolbar_paddingtop">18dp</dimen>
+    <dimen name="workout_program_list_item_buttonsize">20dp</dimen>
+    <dimen name="workout_program_list_profile_icon_size">25dp</dimen>
+    <dimen name="single_workout_program_item_margin">25dp</dimen>
 </resources>
