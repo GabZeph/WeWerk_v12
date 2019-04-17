@@ -5,13 +5,12 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -100,7 +99,8 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: timer listener
-
+//            Intent intent = new Intent(v.getContext(), TimerActivity.class);
+//            startActivity(intent);
         }
     };
 
@@ -109,7 +109,11 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: calculate bmr listener
-
+            Fragment fragment = new CalculateBMRFragment();
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
         }
     };
 
@@ -118,7 +122,8 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: calculate imc listener
-
+//            Intent intent = new Intent(v.getContext(), CalculateIMCActivity.class);
+//            startActivity(intent);
         }
     };
 
@@ -127,7 +132,8 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: find one rep max listener
-
+//            Intent intent = new Intent(v.getContext(), FindOneRepMaxActivity.class);
+//            startActivity(intent);
         }
     };
 
@@ -136,6 +142,9 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: training ressource listener
+//            Intent intent = new Intent(v.getContext(), TrainingRessourcesActivity.class);
+//            startActivity(intent);
+
         }
     };
 
@@ -144,6 +153,9 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: sendfeeback listener
+
+//            Intent intent = new Intent(v.getContext(), SendFeedbackActivity.class);
+//            startActivity(intent);
         }
     };
 
