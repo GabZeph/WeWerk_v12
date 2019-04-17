@@ -9,6 +9,18 @@ public class Exercice implements Serializable {
     private String movementName;
     private int repNumber;
     private int setNumber;
+    private int weightNumber;
+
+    //TODO: make a contructor with all the parameter
+
+    public int getWeightNumber() {
+        return weightNumber;
+    }
+
+    public void setWeightNumber(int weightNumber) {
+        this.weightNumber = weightNumber;
+    }
+
     private Image image;
 
     public Exercice(String movementName, int repNumber, int setNumber, Image image) {

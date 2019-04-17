@@ -186,7 +186,6 @@
                 android:layout_height="wrap_content"
                 android:nestedScrollingEnabled="false"
                 android:overScrollMode="never"
-                android:padding="5dp"
                 android:scrollbars="none" />
         </LinearLayout>
 
