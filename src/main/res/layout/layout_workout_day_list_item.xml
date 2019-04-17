@@ -8,7 +8,6 @@
     android:orientation="vertical"
     android:padding="10dp">
 
-
     <TextView
         android:id="@+id/day_textView"
         android:layout_width="wrap_content"
@@ -30,14 +29,15 @@
         android:layout_height="wrap_content"
         android:background="@drawable/white_border"
         android:gravity="right"
+        android:orientation="horizontal"
         android:padding="5dp"
-        android:orientation="horizontal">
+        android:weightSum="100">
 
         <TextView
             android:id="@+id/movementText_textView"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="50"
             android:text="Movement Name"
             android:textAllCaps="true"
             android:textColor="@color/white"
@@ -45,10 +45,10 @@
 
         <TextView
             android:id="@+id/setText_textView"
-            android:layout_width="60dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="15"
             android:text="Set"
-
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/white"
@@ -56,10 +56,22 @@
 
         <TextView
             android:id="@+id/repText_textView"
-            android:layout_width="60dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Rep"
+            android:layout_weight="15"
 
+            android:text="Rep"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/weightText_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="18"
+            android:text="Weight"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/white"
