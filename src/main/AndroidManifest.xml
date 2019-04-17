@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.SendMessageActivity"></activity>
+        <activity android:name=".activities.CalculateIMCActivity"></activity>
+        <activity android:name=".activities.CalculateBMRActivity" />
+        <activity android:name=".activities.SendMessageActivity" />
         <activity android:name=".activities.ProfileStalkingActivity" />
         <activity android:name=".activities.FollowActivity" />
         <activity android:name=".fragments.WorkoutProgramSingleFragment" />

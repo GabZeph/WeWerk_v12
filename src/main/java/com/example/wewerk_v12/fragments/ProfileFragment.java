@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +26,10 @@ public class ProfileFragment extends Fragment {
 
     private TextView mRealName_textView, mUsername_textView, mProgramsNumber_textView,
             mFollowersNumber_textView, mFollowingNumber_textView;
+    private Button mTimer_button, mCalculateBMR_button, mCalculateIMC_button,
+            mFindOneRepMax_button, mTrainingRessources_button, mSendFeedback_button;
+
+    private ImageView mSettings_imageView;
 
 //    private Button mFollow_button, mMessage_button;
 
@@ -42,7 +48,18 @@ public class ProfileFragment extends Fragment {
         mProgramsNumber_textView = (TextView) view.findViewById(R.id.programNumberTextView);
         mFollowersNumber_textView = (TextView) view.findViewById(R.id.followerNumberTextView);
         mFollowingNumber_textView = (TextView) view.findViewById(R.id.followingNumbertextView);
-//TODO: add button
+
+        mSettings_imageView = (ImageView) view.findViewById(R.id.profile_settings_imageButton);
+
+        mTimer_button = (Button) view.findViewById(R.id.profile_timer_button);
+        mCalculateBMR_button = (Button) view.findViewById(R.id.profile_calculate_bmr_button);
+        mCalculateIMC_button = (Button) view.findViewById(R.id.profile_calculate_imc);
+        mFindOneRepMax_button = (Button) view.findViewById(R.id.profile_findOneRepMax_button);
+        mTrainingRessources_button = (Button) view.findViewById(R.id.profile_training_ressources_button);
+        mSendFeedback_button = (Button) view.findViewById(R.id.sendfeedback_button);
+
+
+        //TODO: add button listener
 
 
 //        mFollow_button = (Button) view.findViewById(R.id.followButton);
