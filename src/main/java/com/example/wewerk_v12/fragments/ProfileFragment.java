@@ -58,9 +58,8 @@ public class ProfileFragment extends Fragment {
         mTrainingRessources_button = (Button) view.findViewById(R.id.profile_training_ressources_button);
         mSendFeedback_button = (Button) view.findViewById(R.id.sendfeedback_button);
 
-
         //TODO: add button listener
-
+        addButtonListener();
 
 //        mFollow_button = (Button) view.findViewById(R.id.followButton);
 //        mMessage_button = (Button) view.findViewById(R.id.messageButton);
@@ -79,6 +78,74 @@ public class ProfileFragment extends Fragment {
 
         return view;
     }
+
+    private void addButtonListener() {
+        mSettings_imageView.setOnClickListener(onSettingClickedListener);
+        mTimer_button.setOnClickListener(onTimerClickedListener);
+        mCalculateBMR_button.setOnClickListener(onCalculateBmrClickedListener);
+        mCalculateIMC_button.setOnClickListener(onCalculateImcClickedListener);
+        mFindOneRepMax_button.setOnClickListener(onFindOneRepMaxClickedListener);
+        mTrainingRessources_button.setOnClickListener(onTrainingRessourcesClickedListener);
+        mSendFeedback_button.setOnClickListener(onSendFeedbackClickedListener);
+    }
+
+    private View.OnClickListener onSettingClickedListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            //TODO; setting listener
+        }
+    };
+
+    private View.OnClickListener onTimerClickedListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+//TODO: timer listener
+
+        }
+    };
+
+
+    private View.OnClickListener onCalculateBmrClickedListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+//TODO: calculate bmr listener
+
+        }
+    };
+
+
+    private View.OnClickListener onCalculateImcClickedListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+//TODO: calculate imc listener
+
+        }
+    };
+
+
+    private View.OnClickListener onFindOneRepMaxClickedListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+//TODO: find one rep max listener
+
+        }
+    };
+
+
+    private View.OnClickListener onTrainingRessourcesClickedListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+//TODO: training ressource listener
+        }
+    };
+
+
+    private View.OnClickListener onSendFeedbackClickedListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+//TODO: sendfeeback listener
+        }
+    };
 
     private View.OnClickListener onTextViewClickedListener = new View.OnClickListener() {
         @Override
