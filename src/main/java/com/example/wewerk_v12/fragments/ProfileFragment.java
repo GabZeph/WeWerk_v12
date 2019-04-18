@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.wewerk_v12.R;
+import com.example.wewerk_v12.activities.CalendarActivity;
 import com.example.wewerk_v12.activities.TimerActivity;
 import com.example.wewerk_v12.models.User;
 
@@ -25,8 +26,10 @@ public class ProfileFragment extends Fragment {
 
     private TextView mRealName_textView, mUsername_textView, mProgramsNumber_textView,
             mFollowersNumber_textView, mFollowingNumber_textView;
-    private Button mTimer_button, mCalculateBMR_button, mCalculateIMC_button,
-            mFindOneRepMax_button, mTrainingRessources_button, mSendFeedback_button;
+    private Button mMessage_button, mCalendar_button, mTimer_button, mCalculateBMR_button, mCalculateIMC_button,
+            mFindOneRepMax_button, mTrainingRessources_button;
+
+    //, mSendFeedback_button
 
     private ImageView mSettings_imageView;
 
@@ -52,12 +55,15 @@ public class ProfileFragment extends Fragment {
 
         mSettings_imageView = (ImageView) view.findViewById(R.id.profile_settings_imageButton);
 
+        mMessage_button = (Button) view.findViewById(R.id.profile_message_button);
+        mCalendar_button = (Button) view.findViewById(R.id.profile_calendar_button);
         mTimer_button = (Button) view.findViewById(R.id.profile_timer_button);
         mCalculateBMR_button = (Button) view.findViewById(R.id.profile_calculate_bmr_button);
         mCalculateIMC_button = (Button) view.findViewById(R.id.profile_calculate_imc);
         mFindOneRepMax_button = (Button) view.findViewById(R.id.profile_findOneRepMax_button);
         mTrainingRessources_button = (Button) view.findViewById(R.id.profile_training_ressources_button);
-        mSendFeedback_button = (Button) view.findViewById(R.id.sendfeedback_button);
+
+        // mSendFeedback_button = (Button) view.findViewById(R.id.sendfeedback_button);
 
         //TODO: add button listener
         addButtonListener();
@@ -82,12 +88,14 @@ public class ProfileFragment extends Fragment {
 
     private void addButtonListener() {
         mSettings_imageView.setOnClickListener(onSettingClickedListener);
+        mMessage_button.setOnClickListener(onMessageClickedListener);
+        mCalendar_button.setOnClickListener(onCalendarClickedListener);
         mTimer_button.setOnClickListener(onTimerClickedListener);
         mCalculateBMR_button.setOnClickListener(onCalculateBmrClickedListener);
         mCalculateIMC_button.setOnClickListener(onCalculateBMIClickedListener);
         mFindOneRepMax_button.setOnClickListener(onFindOneRepMaxClickedListener);
         mTrainingRessources_button.setOnClickListener(onTrainingRessourcesClickedListener);
-        mSendFeedback_button.setOnClickListener(onSendFeedbackClickedListener);
+        // mSendFeedback_button.setOnClickListener(onSendFeedbackClickedListener);
     }
 
     private View.OnClickListener onSettingClickedListener = new View.OnClickListener() {
@@ -99,7 +107,22 @@ public class ProfileFragment extends Fragment {
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, mFragment);
             fragmentTransaction.commit();
+        }
+    };
 
+    View.OnClickListener onMessageClickedListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            //TODO: message listener
+        }
+    };
+
+    View.OnClickListener onCalendarClickedListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            //TODO: calendar listener
+            Intent intent = new Intent(getContext(), CalendarActivity.class);
+            startActivity(intent);
         }
     };
 
@@ -170,16 +193,15 @@ public class ProfileFragment extends Fragment {
     };
 
 
-    private View.OnClickListener onSendFeedbackClickedListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-//TODO: sendfeeback listener
-
-//            Intent intent = new Intent(v.getContext(), SendFeedbackActivity.class);
+//    private View.OnClickListener onSendFeedbackClickedListener = new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
 //
-
-        }
-    };
+////            Intent intent = new Intent(v.getContext(), SendFeedbackActivity.class);
+////
+//
+//        }
+//    };
 
     private View.OnClickListener onTextViewClickedListener = new View.OnClickListener() {
         @Override
