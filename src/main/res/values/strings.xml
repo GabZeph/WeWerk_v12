@@ -71,5 +71,12 @@
     <string name="text_credits">Credits</string>
     <string name="text_privacy_policy">Privacy Policy</string>
     <string name="text_terms">Terms</string>
+    <string name="text_calculator">Calculator</string>
+    <string name="text_rep">Rep</string>
+    <string name="text_weight">Weight</string>
+    <string name="text_set">Set</string>
+    <string name="text_calculate">Calculate</string>
+    <string name="text_enter_your_rep">Enter your rep</string>
+    <string name="text_enter_your_weight_lifted_in_kilograms">Enter your weight lifted in kilograms</string>
 
 </resources>
