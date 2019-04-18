@@ -106,7 +106,7 @@ public class ProfileFragment extends Fragment {
             FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, mFragment);
-            fragmentTransaction.commit();
+            fragmentTransaction.addToBackStack(null).commit();
         }
     };
 
