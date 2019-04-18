@@ -47,6 +47,7 @@ public class TimerActivity extends AppCompatActivity {
         public void onClick(View v) {
             mChronometer.stop();
             mChronometer.setBase(SystemClock.elapsedRealtime());
+            //TODO: when clicking on start after the reset, start gets the old time
         }
     };
 

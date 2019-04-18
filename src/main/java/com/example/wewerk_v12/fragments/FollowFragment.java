@@ -65,7 +65,12 @@ public class FollowFragment extends Fragment implements FollowRecyclerAdapter.On
 
     private void addToolbarButtonListener() {
         //back button
-
+        mBack_imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().popBackStackImmediate();
+            }
+        });
 
         //search button
 

@@ -48,8 +48,8 @@ public class WorkoutProgramListFragment extends Fragment implements WorkoutProgr
         //initializing views
         mWorkoutType_textView = (TextView) view.findViewById(R.id.workoutType_textView);
         mDiscovery_recyclerView = (RecyclerView) view.findViewById(R.id.discovery_recyclerView);
-//        mWorkout_program_back_imageView = (ImageView) view.findViewById(R.id.workout_program_back_imageView);
-//        mWorkout_program_search_imageView = (ImageView) view.findViewById(R.id.workout_program_search_imageView);
+        mWorkout_program_back_imageView = (ImageView) view.findViewById(R.id.workout_program_back_imageView);
+        mWorkout_program_search_imageView = (ImageView) view.findViewById(R.id.workout_program_search_imageView);
 
         //TODO: add toolbar button listener
         addToolbarButtonListener();
@@ -67,6 +67,13 @@ public class WorkoutProgramListFragment extends Fragment implements WorkoutProgr
     }
 
     private void addToolbarButtonListener() {
+        mWorkout_program_back_imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().popBackStackImmediate();
+            }
+        });
+
     }
 
 
