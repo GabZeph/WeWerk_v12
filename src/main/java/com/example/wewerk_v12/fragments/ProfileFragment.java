@@ -1,5 +1,6 @@
 package com.example.wewerk_v12.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.wewerk_v12.R;
+import com.example.wewerk_v12.activities.TimerActivity;
 import com.example.wewerk_v12.models.User;
 
 import java.util.ArrayList;
@@ -105,6 +107,9 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: timer listener
+
+            Intent intent = new Intent(getContext(), TimerActivity.class);
+            startActivity(intent);
 
         }
     };

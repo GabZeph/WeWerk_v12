@@ -77,6 +77,6 @@
     <string name="text_set">Set</string>
     <string name="text_calculate">Calculate</string>
     <string name="text_enter_your_rep">Enter your rep</string>
-    <string name="text_enter_your_weight_lifted_in_kilograms">Enter your weight lifted in kilograms</string>
+    <string name="text_enter_your_lifted_weights_in_kilograms">Enter your lifted weight in kilograms</string>
 
 </resources>
