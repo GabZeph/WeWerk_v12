@@ -79,5 +79,6 @@
     <string name="text_enter_your_rep">Enter your rep</string>
     <string name="text_enter_your_lifted_weights_in_kilograms">Enter your lifted weight in kilograms</string>
     <string name="text_upload_and_download">Upload and Download</string>
+    <string name="text_send_feedback">Send Feedback</string>
 
 </resources>

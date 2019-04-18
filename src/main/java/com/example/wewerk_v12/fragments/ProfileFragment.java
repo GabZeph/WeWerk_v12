@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.example.wewerk_v12.R;
 import com.example.wewerk_v12.activities.CalendarActivity;
 import com.example.wewerk_v12.activities.TimerActivity;
+import com.example.wewerk_v12.activities.ViewMessageActivity;
 import com.example.wewerk_v12.models.User;
 
 import java.util.ArrayList;
@@ -114,6 +115,8 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
             //TODO: message listener
+            Intent intent = new Intent(getContext(), ViewMessageActivity.class);
+            startActivity(intent);
         }
     };
 
