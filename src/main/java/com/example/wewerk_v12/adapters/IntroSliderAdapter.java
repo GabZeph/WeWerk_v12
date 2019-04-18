@@ -72,7 +72,6 @@ public class IntroSliderAdapter extends PagerAdapter {
         introSlideTitle_textView.setText(introSlide_title[position]);
         introSlideDescription_textView.setText(introSlide_descriptions[position]);
 
-
         //adding view to container
         container.addView(view);
 

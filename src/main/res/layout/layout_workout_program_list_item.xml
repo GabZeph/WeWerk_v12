@@ -73,7 +73,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Difficulty"
-                android:textAllCaps="true"
                 android:textColor="@color/white_transparent"
                 android:textSize="18dp" />
 
@@ -86,6 +85,18 @@
         android:layout_gravity="right"
         android:orientation="horizontal"
         android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/share_imageView"
+            android:layout_width="@dimen/workout_program_list_item_buttonsize"
+            android:layout_height="@dimen/workout_program_list_item_buttonsize"
+            android:layout_weight="1"
+            android:tint="@color/white_transparent"
+            app:srcCompat="@drawable/share" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
 
         <ImageView
             android:id="@+id/bookmarkedProgram_imageView"
