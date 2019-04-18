@@ -5,30 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="@dimen/toolbar_paddingtop"
+    android:padding="20dp"
     tools:context=".fragments.SettingsFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"
-        android:gravity="center_vertical"
-        android:weightSum="100">
+    <ImageView
+        android:id="@+id/settings_settings_imageButton"
+        android:layout_width="@dimen/profile_settings_imageview"
+        android:layout_height="@dimen/profile_settings_imageview"
+        android:layout_gravity="right"
+        android:src="@drawable/settings"
+        android:tint="@color/white" />
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/toolbar_height"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:weightSum="100">-->
 
-        <ImageView
-            android:id="@+id/settings_back_button"
-            android:layout_width="@dimen/back_button_widt"
-            android:layout_height="@dimen/back_button_height"
-            android:layout_weight="10"
-            android:src="@drawable/back"
-            android:tint="@color/white" />
+    <!--<ImageView-->
+    <!--android:id="@+id/settings_back_button"-->
+    <!--android:layout_width="@dimen/back_button_widt"-->
+    <!--android:layout_height="@dimen/back_button_height"-->
+    <!--android:layout_weight="10"-->
+    <!--android:src="@drawable/back"-->
+    <!--android:tint="@color/white" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="80"
-            android:text="@string/text_settings"
-            android:textSize="@dimen/toolbar_title_textsize" />
-    </LinearLayout>
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="80"-->
+    <!--android:text="@string/text_settings"-->
+    <!--android:textSize="@dimen/toolbar_title_textsize" />-->
+    <!--</LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,8 +65,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/white_line_height"
-                android:background="@color/white"
+                android:layout_height="@dimen/settings_white_line_height"
+                android:background="@color/white_transparent"
                 android:orientation="vertical" />
 
             <Button
@@ -91,7 +98,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Upload and Download"
+                android:text="@string/text_upload_and_download"
 
                 android:textAllCaps="true"
                 android:textColor="@color/white_transparent"
@@ -99,8 +106,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/white_line_height"
-                android:background="@color/white"
+                android:layout_height="@dimen/settings_white_line_height"
+                android:background="@color/white_transparent"
                 android:orientation="vertical" />
 
             <Button
@@ -140,8 +147,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/white_line_height"
-                android:background="@color/white"
+                android:layout_height="@dimen/settings_white_line_height"
+                android:background="@color/white_transparent"
                 android:orientation="vertical" />
 
             <Button
@@ -185,32 +192,32 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/white_line_height"
-                android:background="@color/white"
+                android:layout_height="@dimen/settings_white_line_height"
+                android:background="@color/white_transparent"
                 android:orientation="vertical" />
 
             <TextView
                 android:id="@+id/settings_terms"
-                android:padding="@dimen/padding_between_subtitle_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/settings_button"
+                android:padding="@dimen/padding_between_subtitle_description"
                 android:text="@string/text_terms" />
 
             <TextView
                 android:id="@+id/settings_privacy_policy"
-                android:padding="@dimen/padding_between_subtitle_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/settings_button"
+                android:padding="@dimen/padding_between_subtitle_description"
                 android:text="@string/text_privacy_policy" />
 
             <TextView
                 android:id="@+id/settings_credits"
-                android:padding="@dimen/padding_between_subtitle_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/settings_button"
+                android:padding="@dimen/padding_between_subtitle_description"
                 android:text="@string/text_credits" />
 
         </LinearLayout>

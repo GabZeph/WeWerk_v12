@@ -13,12 +13,12 @@
     <!--android:layout_height="10dp" />-->
 
     <ImageView
+        android:id="@+id/profile_settings_imageButton"
         android:layout_width="@dimen/profile_settings_imageview"
         android:layout_height="@dimen/profile_settings_imageview"
-        android:tint="@color/white"
         android:layout_gravity="right"
         android:src="@drawable/settings"
-        android:id="@+id/profile_settings_imageButton" />
+        android:tint="@color/white" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_imageView"
@@ -163,9 +163,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:weightSum="6"
         android:layout_height="fill_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="6">
 
         <!--<Button-->
         <!--android:id="@+id/profile_calendar_button"-->
@@ -177,42 +177,65 @@
         <Button
             android:id="@+id/profile_timer_button"
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@drawable/profile_button"
             android:text="@string/text_timer_button" />
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_white_line_height"
+            android:background="@color/white_transparent"
+            android:orientation="vertical" />
+
         <Button
             android:id="@+id/profile_calculate_bmr_button"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@drawable/profile_button"
             android:text="@string/text_calculate_bmr" />
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_white_line_height"
+            android:background="@color/white_transparent"
+            android:orientation="vertical" />
+
         <Button
             android:id="@+id/profile_calculate_imc"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@drawable/profile_button"
             android:text="@string/text_calculate_your_bmi" />
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_white_line_height"
+            android:background="@color/white_transparent"
+            android:orientation="vertical" />
+
         <Button
             android:id="@+id/profile_findOneRepMax_button"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@drawable/profile_button"
             android:text="@string/text_findonerepmax" />
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_white_line_height"
+            android:background="@color/white_transparent"
+            android:orientation="vertical" />
         <!--TODO: why does the space betweenmy buttons gets smaller and where is the setting and feedback buttons? -->
 
         <Button
             android:id="@+id/profile_training_ressources_button"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@drawable/profile_button"
             android:text="@string/text_training_ressources" />
 
@@ -222,6 +245,11 @@
         <!--android:layout_height="wrap_content"-->
         <!--android:background="@drawable/profile_button"-->
         <!--android:text="@string/text_settings" />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_white_line_height"
+            android:background="@color/white_transparent"
+            android:orientation="vertical" />
 
         <Button
             android:id="@+id/sendfeedback_button"
@@ -231,6 +259,7 @@
             android:background="@drawable/profile_button"
             android:text="@string/text_sendfeedback" />
     </LinearLayout>
+
 
     <!--<FrameLayout-->
     <!--android:id="@+id/profileContainer_frameLayout"-->

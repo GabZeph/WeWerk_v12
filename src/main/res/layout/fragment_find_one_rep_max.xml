@@ -50,7 +50,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/white_line_height"
+                android:layout_height="@dimen/white_line_subtitle_height"
                 android:background="@color/white"
                 android:orientation="vertical" />
 
@@ -81,7 +81,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/white_line_height"
+                android:layout_height="@dimen/white_line_subtitle_height"
                 android:background="@color/white"
                 android:orientation="vertical" />
 
@@ -118,7 +118,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/white_line_height"
+                android:layout_height="@dimen/white_line_subtitle_height"
                 android:background="@color/white"
                 android:orientation="vertical" />
 
@@ -154,7 +154,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/white_line_height"
+                android:layout_height="@dimen/white_line_subtitle_height"
                 android:background="@color/white"
                 android:orientation="vertical" />
 

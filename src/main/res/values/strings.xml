@@ -55,7 +55,7 @@
     <string name="text_interpreting_your_bmr">Interpreting your BMR</string>
     <string name="text_calculate_your_bmi">Calculate your BMI</string>
     <string name="text_what_is_bmi">What is BMI</string>
-    <string name="text_interpreting_yout_bmi">Interpreting yout BMI</string>
+    <string name="text_interpreting_your_bmi">Interpreting your BMI</string>
     <string name="text_calculating_your_bmi">Calculating your BMI</string>
     <string name="text_find_your_one_rep_max">Find your one rep max</string>
     <string name="text_what_is_a_one_rep_max">what is a one rep max</string>
@@ -78,5 +78,6 @@
     <string name="text_calculate">Calculate</string>
     <string name="text_enter_your_rep">Enter your rep</string>
     <string name="text_enter_your_lifted_weights_in_kilograms">Enter your lifted weight in kilograms</string>
+    <string name="text_upload_and_download">Upload and Download</string>
 
 </resources>

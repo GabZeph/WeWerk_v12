@@ -168,7 +168,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/white_line_height"
+                android:layout_height="@dimen/white_line_subtitle_height"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
                 android:background="@color/white"
