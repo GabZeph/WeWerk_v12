@@ -92,6 +92,12 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
             //TODO; setting listener
+            mFragment = new SettingsFragment();
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, mFragment);
+            fragmentTransaction.commit();
+
         }
     };
 
@@ -99,8 +105,7 @@ public class ProfileFragment extends Fragment {
         @Override
         public void onClick(View v) {
 //TODO: timer listener
-//            Intent intent = new Intent(v.getContext(), TimerActivity.class);
-//            startActivity(intent);
+
         }
     };
 

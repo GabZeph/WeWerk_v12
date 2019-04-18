@@ -20,4 +20,5 @@
     <dimen name="space_height_between_subtitles">10dp</dimen>
 
     <dimen name="padding_between_subtitle_description">8dp</dimen>
+    <dimen name="toolbar_height">35dp</dimen>
 </resources>

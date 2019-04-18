@@ -52,7 +52,7 @@
             android:padding="@dimen/padding_between_subtitle_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="" />
+            android:text="Your one rep max is your ability to perform " />
     </LinearLayout>
 
     <Space

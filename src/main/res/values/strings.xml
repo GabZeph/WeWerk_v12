@@ -61,5 +61,15 @@
     <string name="text_what_is_a_one_rep_max">what is a one rep max</string>
     <string name="text_interpreting_your_one_rep_max">interpreting your one rep max</string>
     <string name="text_finding_your_one_rep_max">Finding your one rep max</string>
+    <string name="text_general">General</string>
+    <string name="text_drafts">Drafts</string>
+    <string name="text_account">account</string>
+    <string name="text_logout">logout</string>
+    <string name="text_help">help</string>
+    <string name="text_report">report</string>
+    <string name="text_legal">Legal</string>
+    <string name="text_credits">Credits</string>
+    <string name="text_privacy_policy">Privacy Policy</string>
+    <string name="text_terms">Terms</string>
 
 </resources>
